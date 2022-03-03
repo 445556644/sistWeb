@@ -9,11 +9,35 @@
 <title>Cadastro realizado com sucesso</title>
 
 <style>
-.resultado {
-	background-color:
+body{
+background-color: maroon;
+}
+
+
+.tabela {
+	background-color: cyan;
+	text-align: center;
+	margin:auto;
+	width:80%;
+}
+tr{
+background-color: cyan;
+
+}
+th{
+background-color: black;
+color:white;
+}
+
+.estatisticas{
+	background-color: white;
+	color:black;
+	margin:auto;
+	text-align:center;
+	width:60%;
+
 }
 </style>
-
 </head>
 <body>
 	<table border="1" class="tabela">
@@ -39,8 +63,7 @@
 				<td>${p.email}</td>
 				<td>${p.telefone}</td>
 				<td>${p.genero}</td>
-				<td>${p.nascimento}</td>
-
+				
 				<td><fmt:formatDate pattern="dd/MM/yyyy"
 						value="${p.nascimento.time }" /></td>
 
@@ -50,13 +73,14 @@
 			</tr>
 		</c:forEach>
 
-
-
-
-
 	</table>
-
-
+	
+	<div class="estatistica">
+	<p></p>
+	<p></p>
+	<p></p>
+	
+	</div>
 
 </body>
 </html>
